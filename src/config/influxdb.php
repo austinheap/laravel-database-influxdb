@@ -30,7 +30,7 @@ return [
 
     'log'        => [
 
-        'monolog' => env('INFLUXDB_LOG_MONOLOG', true),
+        'monolog' => env('INFLUXDB_LOG_MONOLOG', false),
 
         'level'   => env('INFLUXDB_LOG_LEVEL', 'DEBUG'),
 
