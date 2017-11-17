@@ -1,0 +1,52 @@
+{
+    "name": "austinheap/laravel-database-influxdb",
+    "description": "A package for accessing InfluxDB from Laravel 5.5+, based on configuration settings.",
+    "keywords": [
+        "influx",
+        "influxdb",
+        "influx-db",
+        "database",
+        "timeseries",
+        "laravel"
+    ],
+    "homepage": "https://github.com/austinheap/laravel-database-influxdb",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Austin Heap",
+            "email": "me@austinheap.com",
+            "homepage": "https://github.com/austinheap",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.5.*",
+        "illuminate/log": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "influxdb/influxdb-php": "^1.14.4",
+        "monolog/monolog": "~1.12"
+    },
+    "require-dev": {
+        "codeclimate/php-test-reporter": "dev-master",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AustinHeap\\Database\\InfluxDb\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AustinHeap\\Database\\InfluxDb\\InfluxDbServiceProvider"
+            ],
+            "aliases": {
+                "InfluxDb": "AustinHeap\\Database\\InfluxDb\\InfluxDbFacade"
+            }
+        }
+    }
+}

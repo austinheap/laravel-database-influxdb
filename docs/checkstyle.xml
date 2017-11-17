@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<checkstyle version="1.3.0">
+  <file name="helpers.php">
+    <error line="14" severity="error" message="No summary for function \influxdb()" source="phpDocumentor.file.PPC:ERR-50011"/>
+  </file>
+  <file name="InfluxDbServiceProvider.php">
+    <error line="29" severity="error" message="No summary for method boot()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="52" severity="error" message="No summary for method register()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="83" severity="error" message="No summary for method getLoggingLevel()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="103" severity="error" message="No summary for method getInstance()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="config/influxdb.php"/>
+  <file name="Jobs/WritePoints.php">
+    <error line="89" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="52" severity="error" message="No summary for property $points" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="57" severity="error" message="No summary for property $precision" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Jobs/WritePayload.php">
+    <error line="89" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="52" severity="error" message="No summary for property $payload" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="57" severity="error" message="No summary for property $precision" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Jobs/Job.php">
+    <error line="31" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="Logs/Formatter.php">
+    <error line="22" severity="error" message="Argument $record is missing from the Docblock of format" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="36" severity="error" message="No summary for method prepareMessage()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="102" severity="error" message="No summary for method rfc5424ToSeverity()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="125" severity="error" message="No summary for method replaceDigitData()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="138" severity="error" message="No summary for method trimLines()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Jobs/Write.php">
+    <error line="51" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="22" severity="error" message="No summary for property $payload" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="27" severity="error" message="No summary for property $parameters" source="phpDocumentor.file.PPC:ERR-50007"/>
+  </file>
+  <file name="InfluxDbFacade.php">
+    <error line="28" severity="error" message="No summary for method getFacadeAccessor()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="39" severity="error" message="No summary for method __callStatic()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="58" severity="error" message="No summary for method write()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="77" severity="error" message="No summary for method writePayload()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="99" severity="error" message="No summary for method writePoints()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+  <file name="Logs/MonologHandler.php">
+    <error line="36" severity="error" message="No summary for method write()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+</checkstyle>
