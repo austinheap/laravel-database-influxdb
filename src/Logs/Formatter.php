@@ -5,7 +5,7 @@
  * @author      Austin Heap <me@austinheap.com>
  * @version     v0.1.6
  */
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace AustinHeap\Database\InfluxDb\Logs;
 
@@ -81,7 +81,7 @@ class Formatter extends NormalizerFormatter
      */
     protected function prepareMessage(array $record): array
     {
-        $tags    = $this->prepareTags($record);
+        $tags = $this->prepareTags($record);
         $message = [
             'name'      => 'Error',
             'value'     => 1,
@@ -91,7 +91,7 @@ class Formatter extends NormalizerFormatter
         if (count($tags)) {
             foreach ($tags as $key => $value) {
                 if (is_numeric($value)) {
-                    $message['fields'][$key] = (int)$value;
+                    $message['fields'][$key] = (int) $value;
                 }
             }
 
