@@ -23,7 +23,7 @@
     <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Jobs/Job.php">
-    <error line="31" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="38" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Logs/Formatter.php">
     <error line="22" severity="error" message="Argument $record is missing from the Docblock of format" source="phpDocumentor.file.PPC:ERR-50015"/>

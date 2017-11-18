@@ -3,7 +3,7 @@
  * src/helpers.php.
  *
  * @author      Austin Heap <me@austinheap.com>
- * @version     v0.1.5
+ * @version     v0.1.6
  */
 declare(strict_types=1);
 
