@@ -58,7 +58,8 @@ class InfluxDbFacade extends Facade
     public static function write(array $parameters, $payload): bool
     {
         if (config('influxdb.queue.enable', false) === true) {
-            Write::dispatch($parameters, $payload);
+            Write::dispatch($parameters, $payload)
+                 ->onQueue(config('influxdb.queue.name', 'default'));
         } else {
             return static::getFacadeRoot()
                          ->write($parameters, $payload);
@@ -80,7 +81,8 @@ class InfluxDbFacade extends Facade
         $retentionPolicy = null
     ): bool {
         if (config('influxdb.queue.enable', false) === true) {
-            WritePayload::dispatch($payload, $precision, $retentionPolicy);
+            WritePayload::dispatch($payload, $precision, $retentionPolicy)
+                        ->onQueue(config('influxdb.queue.name', 'default'));
         } else {
             return static::getFacadeRoot()
                          ->writePayload($payload, $precision, $retentionPolicy);
@@ -102,7 +104,8 @@ class InfluxDbFacade extends Facade
         $retentionPolicy = null
     ): bool {
         if (config('influxdb.queue.enable', false) === true) {
-            WritePoints::dispatch($points, $precision, $retentionPolicy);
+            WritePoints::dispatch($points, $precision, $retentionPolicy)
+                       ->onQueue(config('influxdb.queue.name', 'default'));
         } else {
             return static::getFacadeRoot()
                          ->writePoints($points, $precision, $retentionPolicy);

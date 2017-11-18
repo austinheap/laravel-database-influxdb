@@ -26,13 +26,6 @@ class Job implements ShouldQueue
     use SerializesModels;
 
     /**
-     * The name of the queue the job should be sent to.
-     *
-     * @var string|null
-     */
-    public $queue;
-
-    /**
      * @var array
      */
     public $args;
@@ -44,8 +37,6 @@ class Job implements ShouldQueue
      */
     public function __construct(array $args = [])
     {
-        $this->queue = config('influxdb.queue.name', 'default');
-
         if (count($args)) {
             $this->args = $args;
         }
