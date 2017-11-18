@@ -5,7 +5,7 @@
  * @author      Austin Heap <me@austinheap.com>
  * @version     v0.1.6
  */
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace AustinHeap\Database\InfluxDb\Logs;
 
@@ -23,9 +23,7 @@ class Formatter extends NormalizerFormatter
     {
         $record = parent::format($record);
 
-        $message = $this->prepareMessage($record);
-
-        return $message;
+        return $this->prepareMessage($record);
     }
 
     /**
@@ -33,13 +31,9 @@ class Formatter extends NormalizerFormatter
      *
      * @return array
      */
-    protected function prepareMessage(array $record): array
+    protected function prepareTags(array $record): array
     {
         $tags = [];
-        $message = [];
-        $message['name'] = 'Error';
-        $message['value'] = 1;
-        $message['timestamp'] = exec('date +%s%N');
 
         if (isset($_SERVER['REMOTE_ADDR'])) {
             $tags['serverName'] = $_SERVER['REMOTE_ADDR'];
@@ -70,17 +64,34 @@ class Formatter extends NormalizerFormatter
         }
 
         if (isset($record['context']['event']['api_stats'][0])) {
-            foreach ($record['context']['event']['api_stats'][0] as $k => $v) {
-                if (is_string($v) || is_int($v)) {
-                    $tags[$k] = $v;
+            foreach ($record['context']['event']['api_stats'][0] as $key => $value) {
+                if (is_string($value) || is_int($value)) {
+                    $tags[$key] = $value;
                 }
             }
         }
 
-        if (isset($tags) && count($tags)) {
-            foreach ($tags as $k => $v) {
-                if (is_numeric($v)) {
-                    $message['fields'][$k] = (int) $v;
+        return $tags;
+    }
+
+    /**
+     * @param array $record
+     *
+     * @return array
+     */
+    protected function prepareMessage(array $record): array
+    {
+        $tags    = $this->prepareTags($record);
+        $message = [
+            'name'      => 'Error',
+            'value'     => 1,
+            'timestamp' => round(microtime(true) * 1000),
+        ];
+
+        if (count($tags)) {
+            foreach ($tags as $key => $value) {
+                if (is_numeric($value)) {
+                    $message['fields'][$key] = (int)$value;
                 }
             }
 
@@ -137,9 +148,9 @@ class Formatter extends NormalizerFormatter
      */
     private function trimLines($message): string
     {
-        $limit = config('influxdb.log.limit');
+        $limit = config('influxdb.log.limit', 5);
 
-        if ($limit) {
+        if (is_int($limit)) {
             $message_array = explode(PHP_EOL, $message);
 
             if ($limit < count($message_array)) {

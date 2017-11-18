@@ -30,7 +30,7 @@ class Job implements ShouldQueue
      *
      * @var string|null
      */
-    public $queue = 'default';
+    public $queue;
 
     /**
      * @var array

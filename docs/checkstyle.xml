@@ -27,10 +27,11 @@
   </file>
   <file name="Logs/Formatter.php">
     <error line="22" severity="error" message="Argument $record is missing from the Docblock of format" source="phpDocumentor.file.PPC:ERR-50015"/>
-    <error line="36" severity="error" message="No summary for method prepareMessage()" source="phpDocumentor.file.PPC:ERR-50008"/>
-    <error line="102" severity="error" message="No summary for method rfc5424ToSeverity()" source="phpDocumentor.file.PPC:ERR-50008"/>
-    <error line="125" severity="error" message="No summary for method replaceDigitData()" source="phpDocumentor.file.PPC:ERR-50008"/>
-    <error line="138" severity="error" message="No summary for method trimLines()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="34" severity="error" message="No summary for method prepareTags()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="82" severity="error" message="No summary for method prepareMessage()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="113" severity="error" message="No summary for method rfc5424ToSeverity()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="136" severity="error" message="No summary for method replaceDigitData()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="149" severity="error" message="No summary for method trimLines()" source="phpDocumentor.file.PPC:ERR-50008"/>
   </file>
   <file name="Jobs/Write.php">
     <error line="51" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
