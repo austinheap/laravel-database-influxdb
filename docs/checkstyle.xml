@@ -23,7 +23,7 @@
     <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Jobs/Job.php">
-    <error line="38" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
+    <error line="31" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Logs/Formatter.php">
     <error line="22" severity="error" message="Argument $record is missing from the Docblock of format" source="phpDocumentor.file.PPC:ERR-50015"/>
@@ -42,8 +42,8 @@
     <error line="28" severity="error" message="No summary for method getFacadeAccessor()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="39" severity="error" message="No summary for method __callStatic()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="58" severity="error" message="No summary for method write()" source="phpDocumentor.file.PPC:ERR-50008"/>
-    <error line="77" severity="error" message="No summary for method writePayload()" source="phpDocumentor.file.PPC:ERR-50008"/>
-    <error line="99" severity="error" message="No summary for method writePoints()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="78" severity="error" message="No summary for method writePayload()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="101" severity="error" message="No summary for method writePoints()" source="phpDocumentor.file.PPC:ERR-50008"/>
   </file>
   <file name="Logs/MonologHandler.php">
     <error line="36" severity="error" message="No summary for method write()" source="phpDocumentor.file.PPC:ERR-50008"/>
