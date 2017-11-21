@@ -3,11 +3,12 @@
 [![Current Release](https://img.shields.io/github/release/austinheap/laravel-database-influxdb.svg)](https://github.com/austinheap/laravel-database-influxdb/releases)
 [![Total Downloads](https://img.shields.io/packagist/dt/austinheap/laravel-database-influxdb.svg)](https://packagist.org/packages/austinheap/laravel-database-influxdb)
 [![Build Status](https://travis-ci.org/austinheap/laravel-database-influxdb.svg?branch=master)](https://travis-ci.org/austinheap/laravel-database-influxdb)
-[![Code Climate](https://codeclimate.com/github/austinheap/laravel-database-influxdb/badges/gpa.svg)](https://codeclimate.com/github/austinheap/laravel-database-influxdb)
+[![Dependency Status](https://gemnasium.com/badges/github.com/austinheap/laravel-database-influxdb.svg)](https://gemnasium.com/github.com/austinheap/laravel-database-influxdb)
 [![Scrutinizer CI](https://scrutinizer-ci.com/g/austinheap/laravel-database-influxdb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/austinheap/laravel-database-influxdb/)
-[![SensioLabs](https://insight.sensiolabs.com/projects/dc020687-c653-42f0-b006-79d5c7742fb0/mini.png)](https://insight.sensiolabs.com/projects/dc020687-c653-42f0-b006-79d5c7742fb0)
-[![Test Coverage](https://codeclimate.com/github/austinheap/laravel-database-influxdb/badges/coverage.svg)](https://codeclimate.com/github/austinheap/laravel-database-influxdb)
 [![StyleCI](https://styleci.io/repos/110926889/shield?branch=master)](https://styleci.io/repos/110926889)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b88fde39b479c53d0df4/maintainability)](https://codeclimate.com/github/austinheap/laravel-database-influxdb/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b88fde39b479c53d0df4/test_coverage)](https://codeclimate.com/github/austinheap/laravel-database-influxdb/test_coverage)
+[![SensioLabs](https://insight.sensiolabs.com/projects/dc020687-c653-42f0-b006-79d5c7742fb0/mini.png)](https://insight.sensiolabs.com/projects/dc020687-c653-42f0-b006-79d5c7742fb0)
 
 ## A package for accessing InfluxDB from Laravel 5.5+, based on configuration settings.
 
