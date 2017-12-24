@@ -3,7 +3,7 @@
  * src/Jobs/Write.php.
  *
  * @author      Austin Heap <me@austinheap.com>
- * @version     v0.1.6
+ * @version     v0.1.7
  */
 declare(strict_types=1);
 
@@ -55,5 +55,13 @@ class Write extends Job
                                    $this->parameters,
                                    $this->payload
                                );
+    }
+
+    /**
+     * @return array
+     */
+    public function tags(): array
+    {
+        return array_merge(parent::tags(), [static::class . ':1']);
     }
 }

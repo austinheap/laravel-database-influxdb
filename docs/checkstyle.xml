@@ -12,17 +12,20 @@
   <file name="config/influxdb.php"/>
   <file name="Jobs/WritePoints.php">
     <error line="89" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="102" severity="error" message="No summary for method tags()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="52" severity="error" message="No summary for property $points" source="phpDocumentor.file.PPC:ERR-50007"/>
     <error line="57" severity="error" message="No summary for property $precision" source="phpDocumentor.file.PPC:ERR-50007"/>
     <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Jobs/WritePayload.php">
     <error line="89" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="102" severity="error" message="No summary for method tags()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="52" severity="error" message="No summary for property $payload" source="phpDocumentor.file.PPC:ERR-50007"/>
     <error line="57" severity="error" message="No summary for property $precision" source="phpDocumentor.file.PPC:ERR-50007"/>
     <error line="62" severity="error" message="No summary for property $retentionPolicy" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Jobs/Job.php">
+    <error line="48" severity="error" message="No summary for method tags()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="31" severity="error" message="No summary for property $args" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>
   <file name="Logs/Formatter.php">
@@ -35,6 +38,7 @@
   </file>
   <file name="Jobs/Write.php">
     <error line="51" severity="error" message="No summary for method handle()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="63" severity="error" message="No summary for method tags()" source="phpDocumentor.file.PPC:ERR-50008"/>
     <error line="22" severity="error" message="No summary for property $payload" source="phpDocumentor.file.PPC:ERR-50007"/>
     <error line="27" severity="error" message="No summary for property $parameters" source="phpDocumentor.file.PPC:ERR-50007"/>
   </file>

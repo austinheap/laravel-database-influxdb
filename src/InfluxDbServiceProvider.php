@@ -3,7 +3,7 @@
  * src/InfluxDbServiceProvider.php.
  *
  * @author      Austin Heap <me@austinheap.com>
- * @version     v0.1.6
+ * @version     v0.1.7
  */
 declare(strict_types=1);
 

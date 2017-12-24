@@ -3,7 +3,7 @@
  * src/InfluxDbFacade.php.
  *
  * @author      Austin Heap <me@austinheap.com>
- * @version     v0.1.6
+ * @version     v0.1.7
  */
 declare(strict_types=1);
 
@@ -77,7 +77,7 @@ class InfluxDbFacade extends Facade
      */
     public static function writePayload(
         $payload,
-        $precision = WritePayload::PRECISION_NANOSECONDS,
+        $precision = WritePayload::PRECISION_SECONDS,
         $retentionPolicy = null
     ): bool {
         if (config('influxdb.queue.enable', false) === true) {
@@ -100,7 +100,7 @@ class InfluxDbFacade extends Facade
      */
     public static function writePoints(
         array $points,
-        $precision = WritePoints::PRECISION_NANOSECONDS,
+        $precision = WritePoints::PRECISION_SECONDS,
         $retentionPolicy = null
     ): bool {
         if (config('influxdb.queue.enable', false) === true) {

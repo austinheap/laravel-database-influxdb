@@ -3,7 +3,7 @@
  * src/Jobs/WritePoints.php.
  *
  * @author      Austin Heap <me@austinheap.com>
- * @version     v0.1.6
+ * @version     v0.1.7
  */
 declare(strict_types=1);
 
@@ -68,7 +68,7 @@ class WritePoints extends Job
      * @param  string            $precision
      * @param  string|null       $retentionPolicy
      */
-    public function __construct(array $points, $precision = self::PRECISION_NANOSECONDS, $retentionPolicy = null)
+    public function __construct(array $points, $precision = self::PRECISION_SECONDS, $retentionPolicy = null)
     {
         $this->points = $points;
         $this->precision = $precision;
@@ -94,5 +94,13 @@ class WritePoints extends Job
                                    $this->precision,
                                    $this->retentionPolicy
                                );
+    }
+
+    /**
+     * @return array
+     */
+    public function tags(): array
+    {
+        return array_merge(parent::tags(), [static::class . ':' . count($this->points)]);
     }
 }
