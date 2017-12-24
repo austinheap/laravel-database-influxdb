@@ -62,6 +62,6 @@ class Write extends Job
      */
     public function tags(): array
     {
-        return array_merge(parent::tags(), [static::class . ':1']);
+        return array_merge(parent::tags(), [static::class.':1']);
     }
 }

@@ -101,6 +101,6 @@ class WritePoints extends Job
      */
     public function tags(): array
     {
-        return array_merge(parent::tags(), [static::class . ':' . count($this->points)]);
+        return array_merge(parent::tags(), [static::class.':'.count($this->points)]);
     }
 }
