@@ -20,9 +20,9 @@
         }
     ],
     "require": {
-        "laravel/framework": "5.5.*",
-        "illuminate/log": "5.5.*",
-        "illuminate/support": "5.5.*",
+        "laravel/framework": "5.5.*|5.6.*",
+        "illuminate/log": "5.5.*|5.6.*",
+        "illuminate/support": "5.5.*|5.6.*",
         "influxdb/influxdb-php": "^1.14.4",
         "monolog/monolog": "~1.12"
     },
